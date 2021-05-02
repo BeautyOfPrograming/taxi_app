@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "903626506267",
+    "project_id": "uber-flutter-e8901",
+    "storage_bucket": "uber-flutter-e8901.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903626506267:android:7444db6b653ce71f41b8be",
+        "android_client_info": {
+          "package_name": "com.muhammadali.taxiapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903626506267-tfehtu04l4ojchqdk1mb77s3dr4cl0b6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBudfeLfwGfqOGr-pBX-I6g7xEAXqf9S8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "903626506267-tfehtu04l4ojchqdk1mb77s3dr4cl0b6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
