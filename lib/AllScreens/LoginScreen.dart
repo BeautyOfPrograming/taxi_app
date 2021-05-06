@@ -76,6 +76,7 @@ class LoginScreen extends StatelessWidget {
                     )
                   ],
                 ),
+
               ),
               FlatButton(
                 onPressed: () {
