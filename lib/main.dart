@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'AllScreens/MainScreen.dart';
+import 'AllScreens/LoginScreen.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -11,12 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'taxi driver app',
       theme: ThemeData(
         fontFamily: "Signatra",
         primarySwatch: Colors.blue,
       ),
-      home: MainScreen(),
+      home: LoginScreen(),
     );
   }
 }
