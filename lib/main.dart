@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:taxi_app/AllScreens/Registration.dart';
 
 import 'AllScreens/MainScreen.dart';
 import 'AllScreens/LoginScreen.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         fontFamily: "Signatra",
         primarySwatch: Colors.blue,
       ),
-      home: LoginScreen(),
+      home: RegisterScreen(),
     );
   }
 }
