@@ -1,8 +1,13 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:taxi_app/AllScreens/Registration.dart';
+import 'package:taxi_app/main.dart';
 
 class LoginScreen extends StatelessWidget {
+
+  static const String idScreen = "Login";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -57,12 +62,14 @@ class LoginScreen extends StatelessWidget {
                       ),
                       style: TextStyle(fontSize: 19),
                     ),
-                    SizedBox(height: 1.0),
+                    SizedBox(height: 25.0),
+
                     RaisedButton(
-                      color: Colors.yellow,
+                      color: Colors.green,
                       textColor: Colors.white,
                       child: Container(
                         height: 50.0,
+
                         child: Center(
                           child: Text(
                             "Login",
@@ -81,6 +88,8 @@ class LoginScreen extends StatelessWidget {
               FlatButton(
                 onPressed: () {
                   print("clicked me");
+                  Navigator.pushNamedAndRemoveUntil(context, RegistrationScreen.idScreen, (route) => false);
+
                 },
                 child: Text("Do not have an Account ? Register here"),
               ),

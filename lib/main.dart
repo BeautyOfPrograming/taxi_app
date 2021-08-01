@@ -1,11 +1,18 @@
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:taxi_app/AllScreens/Registration.dart';
 
 import 'AllScreens/MainScreen.dart';
 import 'AllScreens/LoginScreen.dart';
 
+DatabaseReference userRef = FirebaseDatabase.instance.reference().child("Users");
 
-void main() {
+void main() async{
+
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+
   runApp(MyApp());
 }
 
@@ -19,7 +26,16 @@ class MyApp extends StatelessWidget {
         fontFamily: "Signatra",
         primarySwatch: Colors.blue,
       ),
-      home: RegisterScreen(),
+
+      initialRoute: RegistrationScreen.idScreen,
+      routes:{
+
+         RegistrationScreen.idScreen :(context) => RegistrationScreen(),
+         MainScreen.idScreen : (context)=>MainScreen(),
+         LoginScreen.idScreen:(context)=>LoginScreen()
+
+      }
+
     );
   }
 }
